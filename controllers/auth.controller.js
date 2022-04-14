@@ -71,7 +71,8 @@ const loginUsuario = async (req = request, res = response) => {
 
         res.json({
             ok:true,
-            msg:'login', 
+            uid:usuario.id,
+            name:usuario.name, 
             token
         })
         
